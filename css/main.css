@@ -62,7 +62,18 @@ img {
     
 }
 
-
+@media only screen and (min-width: 45em) {
+    
+    .mars-title {
+        float: left;
+    }
+    
+    .nav {
+        display: inline;
+        width: auto;
+    }
+    
+} 
 
     
     
