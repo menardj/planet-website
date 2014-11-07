@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Exploration · Mars</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:400,400italic,700" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/typography.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -20,18 +21,106 @@
     <h1 class="title peta push-0">Mars</h1>
   </div>
   <nav id="navigation" role="navigation" class="unit gutter-1-2 unit-xs-1 unit-s-1 unit-m-2-3 unit-l-2-3">
-    <ul class="nav giga push-0">
-      <li><a class="island-1-2" href="index.html">Planet</a></li>
+    <ul class="nav giga push-0 brand-family">
+      <li><a class="island-1-2 " href="index.html">Planet</a></li>
       <li><a class="island-1-2" href="moons.html">Moons</a></li>
-      <li><a class="island-1-2" href="exploration.html">Exploration</a></li>
+      <li><a class="island-1-2 nav-current" href="exploration.html">Exploration</a></li>
     </ul>
   </nav>
 </header>
 
-<main id="main" role="main">
+<main role="main" id="main">
 
   <div class="section-mid intro peta island-1-2 push">
     <h1 class="push-0">Exploration</h1>
+  </div>
+
+  <div class="table-outer pad-t pad-b">
+    <div class="table-inner">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Mission</th>
+            <th scope="col">Launch</th>
+            <th scope="col">Arrival</th>
+            <th scope="col">Termination</th>
+            <th scope="col">Objective</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Viking 1</th>
+            <td><time datetime="1975-08-20">Aug. 20, 1975</time></td>
+            <td><time datetime="1976-07-20">Jul. 20, 1976</time></td>
+            <td><time datetime="1982-11-13">Nov. 13, 1982</time></td>
+            <td>Lander</td>
+          </tr>
+          <tr>
+            <th scope="row">Mars Pathfinder</th>
+            <td><time datetime="1996-12-04">Dec. 4, 1996</time></td>
+            <td><time datetime="1997-07-04">Jul. 4, 1997</time></td>
+            <td><time datetime="1985-06-15">Sept. 27, 1997</time></td>
+            <td>Lander, Rover</td>
+          </tr>
+          <tr>
+            <th scope="row">Phoenix</th>
+            <td><time datetime="2007-08-04">Aug. 4, 2007</time></td>
+            <td><time datetime="2008-05-25">May. 25, 2008</time></td>
+            <td><time datetime="2008-11-10">Nov. 10, 2008</time></td>
+            <td>Lander</td>
+          </tr>
+          <tr>
+            <th scope="row">MSL Curiosity</th>
+            <td><time datetime="2011-11-26">Nov. 26, 2011</time></td>
+            <td><time datetime="2012-08-06">Aug. 6, 2012</time></td>
+            <td><time>Currently Operational</time></td>
+            <td>Rover</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-mid mid island">
+    <h2 class="align-center">Join Mars’ Exploration Team</h2>
+    <p class="align-center">Are you interested in exploring Mars with a group of extremely talented people? <em>Sign up below!</em></p>
+
+    <form action="" method="post">
+      <div class="push-1-2">
+        <label for="name">Name</label>
+        <input id="name">
+      </div>
+      <div class="push-1-2">
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+      </div>
+      <div class="push-1-2">
+        <label for="age">Age</label>
+        <input type="number" id="age" min="18" max="75">
+      </div>
+      <fieldset class="push-1-2">
+        <legend>Your level of awesomeness:</legend>
+        <span class="radio">
+          <input type="radio" id="meh" name="awesomeness">
+          <label for="meh">Meh…</label>
+        </span>
+        <span class="radio">
+          <input type="radio" id="pretty-good" name="awesomeness">
+          <label for="pretty-good">Pretty good.</label>
+        </span>
+        <span class="radio">
+          <input type="radio" id="super" name="awesomeness">
+          <label for="super">Super!</label>
+        </span>
+      </fieldset>
+      <div class="push">
+        <label for="why">Explain why you deserve to go:</label>
+        <textarea id="why"></textarea>
+      </div>
+      <div class="align-center">
+        <button class="tera" type="submit">Sign Up</button>
+      </div>
+    </form>
   </div>
 
 </main>
